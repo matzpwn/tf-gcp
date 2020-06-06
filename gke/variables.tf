@@ -22,8 +22,10 @@ variable "machine_type" {
 
 variable "min_node_count" {
     type = number
+    default = 1
 }
 
 variable "max_node_count" {
     type = number
+    default = 2
 }
