@@ -7,7 +7,12 @@ A Set Collection of Terraform Modules for Google Cloud Platform services
 
 Select on individual link below to see the module details
 
-* [VM](https://github.com/muffat/tf-gcp/vm)
+* [VM](https://github.com/muffat/tf-gcp/tree/master/vm)
+* [GKE](https://github.com/muffat/tf-gcp/tree/master/gke)
+
+# Contribute
+
+Feel free to contribute on this project by raise a pull request.
 
 # License
 
