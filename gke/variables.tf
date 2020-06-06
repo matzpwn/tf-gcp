@@ -1,18 +1,22 @@
 variable "cluster_name" {
-  type = string
+  description = "The name of the cluster, unique within the project and location"
+  type        = string
 }
 
 variable "location" {
-  type = string
+  description = "The location (region or zone) in which the cluster master will be created, as well as the default node location"
+  type        = string
 }
 
 variable "initial_node_count" {
-  default = 1
-  type    = number
+  description = "The number of nodes to create in this cluster's default node pool"
+  default     = 1
+  type        = number
 }
 
 variable "node_pool_name" {
-  type = string
+  description = "The name of the node pool. If left blank, Terraform will auto-generate a unique name"
+  type        = string
 }
 
 variable "machine_type" {
@@ -21,11 +25,13 @@ variable "machine_type" {
 }
 
 variable "min_node_count" {
-    type = number
-    default = 1
+  description = "Minimum number of nodes in the NodePool. Must be >=0 and <= max_node_count"
+  type        = number
+  default     = 1
 }
 
 variable "max_node_count" {
-    type = number
-    default = 2
+  description = "Maximum number of nodes in the NodePool. Must be >= min_node_count"
+  type        = number
+  default     = 2
 }
