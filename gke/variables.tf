@@ -11,3 +11,7 @@ variable "initial_node_count" {
 variable "node_pool_name" { 
     type = string
 }
+variable "machine_type" {
+    description = "Machine type for cluster. See: https://cloud.google.com/compute/docs/machine-types"
+    type = string
+}
