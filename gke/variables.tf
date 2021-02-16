@@ -36,3 +36,9 @@ variable "max_node_count" {
   type        = number
   default     = 2
 }
+
+variable "kubernetes_version" {
+  description = "The Kubernetes version for the nodes in this pool. See: https://cloud.google.com/kubernetes-engine/docs/release-notes"
+  type        = string
+  default     = "1.17.17-gke.1100"
+}

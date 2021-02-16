@@ -20,6 +20,7 @@ resource "google_container_node_pool" "default" {
   location   = var.location
   cluster    = google_container_cluster.default.name
   node_count = var.initial_node_count
+  version    = var.kubernetes_version
 
   autoscaling {
     min_node_count = var.min_node_count
